@@ -10,7 +10,8 @@
       "email" : "aiham@aiham.net"
     },
     "license" : {
-      "name" : "MIT"
+      "name" : "MIT",
+      "url" : "https://opensource.org/licenses/MIT"
     }
   },
   "definitions" : {
