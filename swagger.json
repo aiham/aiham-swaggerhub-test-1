@@ -1,0 +1,67 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1",
+    "title" : "Aiham Swaggerhub Test 1",
+    "description" : "Testing swaggerhub",
+    "contact" : {
+      "name" : "Aiham Hammami",
+      "url" : "http://www.aiham.net",
+      "email" : "aiham@aiham.net"
+    },
+    "license" : {
+      "name" : "MIT"
+    }
+  },
+  "paths" : {
+    "/foo/bar" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Dummy endpoint",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "name" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "body",
+          "schema" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              }
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Dummy endpoint",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "name" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
